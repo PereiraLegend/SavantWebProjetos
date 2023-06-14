@@ -71,7 +71,7 @@ header{
     justify-content: space-around;
     flex: 1;
     flex-wrap: wrap; /*Deixa responsivo para mobile*/
-    align-items: center;
+    /*align-items: center;*/
 }
 
 @media screen and (max-width: 768px) { /*Se a tela ficar menor que o tamanho determinado aqui os itens em linha se tornam colunas*/
