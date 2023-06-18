@@ -2,13 +2,16 @@
 body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    /*align-items: center;*/
 }
 .logo img { /*Logo*/
     float: left;
     max-width: 100px; /*Ajustar a altura da imagem*/
     max-height: auto; /*Ajustar a largura da imagem*/
-    padding: 0.4px; /*Ajustar a posição da imagem*/
-    padding-left: 30px;/*Ajustar a posição da imagem*/
+    /*padding: 0.4px; /*Ajustar a posição da imagem*/
+    /*padding-left: 30px;/*Ajustar a posição da imagem*/
     width: 50%;
 }
 .logo {
@@ -16,7 +19,7 @@ body {
 }
 
 header{
-    padding: 20px;
+    /*padding: 20px;*/
 }
 .btn-menu {
     width: 90%;
@@ -55,6 +58,32 @@ header{
     width: 100%;
 }
 
+/*Parte Sobre*/
+
+
+
+/*Fontes e alinhamento do site*/
+.flex-box{
+  display: flex;
+}
+.Alinhamento-texto{
+  text-align: center;
+  align: justify;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+.fonte-texto-karla{
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+}
+
+.cor-texto{
+  color: gray;
+}
+
+.formatacao-linhas{
+  line-height: 30px;
+}
 /*Parte Serviços*/
 .container-card{
   width: 100%;
