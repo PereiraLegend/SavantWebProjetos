@@ -1,31 +1,30 @@
+<!--Main Principal-->
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Mais Saúde</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="slide.js" defer></script>
+    <title>Clínica Mais Saúde</title>
 </head>
-
 <body>
     <header class="menu-principal">
         <div class="center">
             <div class="logo"><img src="./img/simbolo-medicina.jpg"></div>
-            <div class="btn-menu">
-                <nav>
-                    <a href="#">Inicio</a>
-                    <a href="#">Serviços</a>
-                    <a href="#">Localização</a>
-                    <a href="#">Contato</a>
-                    <a href="#">Sobre</a>
-                </nav>
-            </div>
+        <div class="btn-menu">
+           <nav> 
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <!--<a href="#">Localização</a>-->
+            <a href="#">Serviços</a>
+            <a href="#">Contate-nos</a>
+            </nav>   
+        </div>
         </div>
     </header>
-
-    <!--Slide carrossel-->
+    
     <div class="container">
         <button class="arrow-left control" aria-label="previous image">◀</button>
         <button class="arrow-right control" aria-label="next image">▶</button>
@@ -41,35 +40,181 @@
             </div>
         </div>
     </div>
+    
+    <br><br><br> <!--Parte Sobre-->
+    
+    <div class="ajuste-lateral">
+        <section class="Alinhamento-texto fonte-texto-karla cor-texto formatacao-linhas">
+                <h1 class="">Quem Somos?</h1>
+                <br>
+                <div>
+                
+                <p> Descubra a clínica que cuida do seu bem-estar de forma<br>
+                    integral. Na Clínica Vitalis, a sua saúde e qualidade de<br>
+                    vida são nossa prioridade. Nossa equipe de profissionais<br>
+                    altamente qualificados está pronta para oferecer os<br>
+                    melhores cuidados médicos, utilizando as técnicas mais<br>
+                    avançadas e personalizadas para cada paciente. Fazemos<br>
+                    o melhor atendimento pelo melhor preço, com profissionais<br>
+                    altamente capacitados, nossa clínica é a número 1º;
+                </p>
+            </div>
+        </section>
 
-    <!--Texto após os Slides-->
-    <h1 class="center">Serviços</h1>
-    <div class="center">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nemo eum quod maiores repudiandae
-            distinctio numquam, iure vel nobis? Reprehenderit eveniet harum sunt at blanditiis, accusantium autem in.
-            Reiciendis, quasi?</p>
+        <section class="">
+            <!--Imagens-->
+            <div class=""><img src="./img/QuadradoSobre.png"></div>
+            <br>
+            <div class=""><img src="./img/QuadradoSobre.png"></div>
+        </section>
+        
+        <section class="">
+            <div class=""><img src="./img/RetanguloSobre.png"></div>
+        </section>
     </div>
 
-    <!--Google Mapas-->
-    <h1 class="center">Contatos</h1>
-    <div class="container">
-        <div class="ajuste-lateral">
-            <section class="map-box">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1365.0483476920635!2d-42.81827660317849!3d-5.091829986057185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1686317514475!5m2!1spt-BR!2sbr"
-                    width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+    <br><br><br> <!--Parte Serviços-->
 
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illum mollitia temporibus quia
-                    distinctio cupiditate sequi quo praesentium ratione culpa, dolores nihil repellendus possimus numquam
-                    ab, ipsa minima? Accusantium, quia.</p>
-            </section>
+    <div class="Alinhamento-texto fonte-texto-karla cor-texto">
+        <center><h2>Nossos Serviços</h2></center>
+        <div class="container-card">
+            <!-- Card 1-->
+            <div class="card">
+                <!--card-header-->
+                <div class="card-header">
+                    <img src="img/Serviço1.jpg" class="card-img">
+                </div>
+                <!-- card header-->
+                <!--card body-->
+                <div class="card-body">
+                    <h1 class="card-nome">Clinico Geral</h1>
+                    <p class="card-texto">
+                        Avaliação do estado geral de saúde permitindo que diversos tipoes de doenças possam
+                            ser detectadas precocemente, aumentando assim consideravelmente as chances de sucesso nos
+                            tratamentos.
+                    </p>
+                </div>
+            </div>
+            <!--Card 1-->
+
+             <!-- Card 2-->
+             <div class="card">
+                <!--card-header-->
+                <div class="card-header">
+                    <img src="img/Serviço2.jpg" class="card-img">
+                </div>
+                <!-- card header-->
+                <!--card body-->
+                <div class="card-body">
+                    <h1 class="card-nome">Oftalmologista</h1>
+                    <p class="card-texto">
+                        Avaliação da capacidade visual e saude dos olhos, permitindo assim identificar alterações
+                                que podem causar ou ser sinais de problemas de visão ou doenças.
+                    </p>
+                </div>
+            </div>
+            <!--Card 2-->
+
+             <!-- Card 3-->
+             <div class="card">
+                <!--card-header-->
+                <div class="card-header">
+                    <img src="img/Serviço3.jpg" class="card-img">
+                </div>
+                <!-- card header-->
+                <!--card body-->
+                <div class="card-body">
+                    <h1 class="card-nome">Otorrino</h1>
+                    <p class="card-texto">
+                        Avaliação da saude dos orgãos ouvido, nariz e garganta, prevenindo, diagnosticando
+                        e realizando tratamento de doenças relacionada a esses orgãos Por exemplo: gripes,
+                        resfriados, sinusites.   
+                    </p>
+                </div>
+            </div>
+            <!--Card 3-->
+
+             <!-- Card 4-->
+             <div class="card">
+                <!--card-header-->
+                <div class="card-header">
+                    <img src="img/Serviço4.jpg" class="card-img">
+                </div>
+                <!-- card header-->
+                <!--card body-->
+                <div class="card-body">
+                    <h1 class="card-nome">Pediatra</h1>
+                    <p class="card-texto">
+                             Avaliação da saúde física,  
+                                mental e emocional de crianças e adolescentes, 
+                                diferentes aspectos relacionados ao desenvolvimento, crescimento, comportamento, habilidades motoras, 
+                                cognitivas.
+                    </p>
+                </div>
+            </div>
+            <!--Card 4-->
         </div>
     </div>
 
-    <script src="butoes.js" defer></script>
+    <br><br><br><!--Google Mapas-->
+        
+    <div class="ajuste-lateral fonte-texto-karla cor-texto">
+        <section class="Alinhamento-texto">
+            <h1>Visite-nos</h1>
+            <h3>Horários de funcionameto</h3>
+            <p>Sempre estaremos prontos para receber você nesses horários:</p>
+            <p>Funcionamos de segunda a sexta das 8:00 ás 17:00<br>Aos sábados funcionamos das 8:00 ás 12:00</p>
+            <br>
+            <h3>Localização</h3>
+            <p>Rua por aí, 2888 <br>Teresina - Pi</p>
+            <p>Rua dos Viajantes, 4006 <br>Parnaiba - Pi</p>
+            <br><br>
+        </section>
+        
+        <section class="map-box Alinhamento-texto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1365.0483476920635!2d-42.81827660317849!3d-5.091829986057185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1686317514475!5m2!1spt-BR!2sbr" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+    <!--</center>-->
+    <!--Footer col-->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href="#"> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> Nossas lojas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Localização</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><a href="#">Agendamento</a></li>
+                        <li><a href="#">Opções De Pagamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h1>Receba as novidades!</h1>
+                    <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <button>Cadastrar</button>
+                        </form>
+                    </div>
+                   
+                 </div class="linha-footer"><hr size="1" width="100%" color="grey">
+            </div> 
+            <div class="footer-col">
+                
+                <h5>© 2023.SavantWeb.Todos os direitos reservados.</h5>
+            </div>
+         </div>
+    </footer>
 </body>
-
 </html>
