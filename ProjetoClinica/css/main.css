@@ -264,7 +264,7 @@ h1 {
     background-color: white;
     float: right;
 }
-.container{
+.container-flex{
     display: flex;
 }
 .ajuste-lateral{
