@@ -22,12 +22,12 @@ controls.forEach((control) => {
     }
 
     items.forEach((item) => item.classList.remove("current-item"));
-
+    
     items[currentItem].scrollIntoView({
       behavior: "smooth",
       inline: "center"
     });
-
+    
     items[currentItem].classList.add("current-item");
   });
 });
