@@ -282,6 +282,7 @@ h1 {
     justify-content: space-around;
     flex: 1;
     flex-wrap: wrap; /*Deixa responsivo para mobile*/
+    margin: 0px 150px 0px;
     /*align-items: center;*/
 }
 
