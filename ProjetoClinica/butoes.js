@@ -70,4 +70,4 @@ controls.forEach((control) => {
 setInterval(() => {
   const isLeft = true; // Define a direção do clique (esquerda nesse caso)
   clickControl(isLeft);
-}, 5000);
+}, 1000);

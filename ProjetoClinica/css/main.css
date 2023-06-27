@@ -9,8 +9,16 @@ body {
     height: 100%;
     overflow-x: hidden;
     justify-content: center;
+    
     /*align-items: center;*/
 }
+.ajuste-margem {
+  margin: 0px 150px 0px;
+}
+.ajuste-margem2 {
+  margin: 0px 100px 0px;
+}
+
 .logo img { /*Logo*/
     float: left;
     max-width: 100px; /*Ajustar a altura da imagem*/
