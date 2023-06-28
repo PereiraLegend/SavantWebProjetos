@@ -45,6 +45,7 @@ header{
     width: 100%; /*Aqui digo pra ele preencher e 100%*/
     /*background-color: aquamarine; /**/
     height: 85px;
+    /*background-color: aquamarine;*/
     
 }
 .btn-menu a { /*Menu texto botões*/
@@ -75,6 +76,22 @@ header{
 }
 .borda-redonda{
   border-radius: 40px;
+}
+.espacamento-imgs{
+  margin: 10px;
+}
+.direcao-coluna{
+  flex-direction: column;
+}
+.direcao-linha{
+  flex-direction: row;
+}
+.alinhamento-centro{
+  align-items: center;
+}
+
+.area1, .area2, .area3, .area4, .area5{
+  visibility: hidden;
 }
 /*Parte Slides*/
 
@@ -299,10 +316,14 @@ h1 {
     /*align-items: center;*/
 }
 
+/**Parte responsividade*/
 @media screen and (max-width: 768px) { /*Se a tela ficar menor que o tamanho determinado aqui os itens em linha se tornam colunas*/
     .ajuste-lateral{
         width: 100%;
         flex-direction: column;
+    }
+    .direcao-linha{
+      flex-direction: column;
     }
 }
 /****************************************************************/
@@ -379,6 +400,7 @@ form textarea:hover{
 form button:hover{
   border-radius: 16px;
 }
+
 /***************************************************************/
 /*Parte botão Topo*/
 
