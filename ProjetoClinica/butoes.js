@@ -70,4 +70,24 @@ controls.forEach((control) => {
 setInterval(() => {
   const isLeft = true; // Define a direção do clique (esquerda nesse caso)
   clickControl(isLeft);
-}, 1000);
+}, 100000);
+
+/**************************************************************************************** */
+
+/**Script do botão Voltar ao topo*/
+
+const btn =document.getElementById("botao-topo")
+btn.addEventListener("click", function(){
+  window.scrollTo(0,0)
+})
+
+document.addEventListener('scroll', ocultar)
+
+function ocultar(){
+  if(window.scrollY > 20){
+    btn.style.display = "flex"
+  } else {
+    btn.style.display = "none"
+  }
+}
+ocultar()

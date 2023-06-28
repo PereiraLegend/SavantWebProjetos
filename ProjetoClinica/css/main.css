@@ -16,14 +16,17 @@ body {
   margin: 0px 150px 0px;
 }
 .ajuste-margem2 {
-  margin: 0px 100px 0px;
+  margin: 0px 50px 0px;
 }
-
+html {
+  scroll-behavior:smooth;
+  scroll-snap-time: 2s;
+}
 .logo img { /*Logo*/
     float: left;
-    max-width: 100px; /*Ajustar a altura da imagem*/
+    max-width: 110px; /*Ajustar a altura da imagem*/
     max-height: auto; /*Ajustar a largura da imagem*/
-    /*padding: 0.4px; /*Ajustar a posição da imagem*/
+    padding: 10px; /*Ajustar a posição da imagem*/
     /*padding-left: 30px;/*Ajustar a posição da imagem*/
     width: 50%;
 }
@@ -69,6 +72,9 @@ header{
 }
 .btn-menu a:hover::after{ /*Animação do css nos botões do menu*/
     width: 100%;
+}
+.borda-redonda{
+  border-radius: 40px;
 }
 /*Parte Slides*/
 
@@ -311,7 +317,96 @@ h1 {
   background-color: white;
 }
 
+.email-formatacao{
+  background-color: #74d4cc;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 45px;
+  width: 500px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.email-formatacao form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.email-formatacao label{
+  margin-bottom: 15px;
+}
+
+.email-formatacao input{
+  padding: 8px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+
+form input:focus{
+  border-radius: 16px;
+}
+form input:hover{
+  border-radius: 16px;
+}
+.email-formatacao textarea{
+  padding: 10px;
+  outline: none;
+  border: 0;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+form textarea:focus{
+  border-radius: 16px;
+}
+
+form textarea:hover{
+  border-radius: 16px;
+}
+
+.email-formatacao button{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #f5f5f5;
+  margin-bottom: 20px;
+  transition: all 1s;
+}
+
+form button:hover{
+  border-radius: 16px;
+}
 /***************************************************************/
+/*Parte botão Topo*/
+
+#botao-topo{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(127, 255, 212, .5); /*Essa última parte dá efeito de transparência*/
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.seta{
+  border: solid gray;
+  border-width: 0 7px 7px 0;
+  padding: 5px;
+  display: inline-block;
+}
+.cima{
+  transform: rotate(-135deg);
+}
+
+/**************************************************************/
 /*Parte Footer*/
 footer{
   background-color: #9fa0a3;
