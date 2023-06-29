@@ -32,6 +32,7 @@ html {
 }
 .logo {
     width: 50%;
+    margin-left: 130px;
 }
 
 header{
@@ -79,6 +80,16 @@ header{
 }
 .espacamento-imgs{
   margin: 10px;
+}
+
+.tamanho-imgs-quadrados{
+  max-width: 200px;
+  border-radius: 40px;
+}
+
+.tamanho-imgs-retangulo{
+  max-width: 254px;
+  border-radius: 40px;
 }
 .direcao-coluna{
   flex-direction: column;
@@ -325,6 +336,15 @@ h1 {
     .direcao-linha{
       flex-direction: column;
     }
+    .logo{
+      margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+  .logo{
+    margin-left: 50px;
+  }
 }
 /****************************************************************/
 /*Parte contatos*/
