@@ -368,11 +368,14 @@ h1 {
   }
 }
 
-.back {
-  background-color: yellow;
-  margin-left: 30px;
+.fundo-contatos {
+  /*background-color: yellow;*/
+  margin-left: 40px;
 }
 
+.fundo-contatos2 {
+  background-color: beige;
+}
 .tamanho-imgs-logos-email{
   max-width: 70px;
   /*border-radius: 40px;*/
