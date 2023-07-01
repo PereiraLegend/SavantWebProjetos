@@ -78,6 +78,7 @@ header{
 .borda-redonda{
   border-radius: 40px;
 }
+
 .espacamento-imgs{
   margin: 10px;
 }
@@ -347,13 +348,53 @@ h1 {
     margin-left: 50px;
   }
 }
+
+
 /****************************************************************/
 /*Parte contatos*/
 .alinhamento-contate-nos{
   margin: 50%;
-  margin-top: -10px;
-  margin-bottom: -250px;
+  margin-top: 10px;
+  margin-bottom: -530px;
   position: relative;
+}
+
+@media screen and (max-width: 1000px){
+  .alinhamento-contate-nos{
+    margin: 50%;
+    margin-top: 10px;
+    margin-bottom: -150px;
+    position: relative;
+  }
+}
+
+.back {
+  background-color: yellow;
+  margin-left: 30px;
+}
+
+.tamanho-imgs-logos-email{
+  max-width: 70px;
+  /*border-radius: 40px;*/
+}
+.tamanho-imgs-logos-insta{
+  max-width: 50px;
+  margin-top: 20px;
+  /*border-radius: 40px;*/
+}
+.tamanho-imgs-logos-whats{
+  max-width: 80px;
+  margin-top: 17px;
+  margin-right: 1px;
+  margin-left: 0px;
+  /*border-radius: 40px;*/
+}
+.tamanho-imgs-logos-face{
+  max-width: 68px;
+  margin-top: 12px;
+  margin-right: 10px;
+  margin-left: 1px;
+  /*border-radius: 40px;*/
 }
 .ajuste-lateral2{
 
@@ -363,21 +404,14 @@ h1 {
   flex-wrap: wrap; /*Deixa responsivo para mobile*/
   /*align-items: center;*/
 }
-/*
-.contatos-fundo1 {
-  background-image: url(../img/medicoAfooter.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  max-width: auto;
-  max-height: auto;
-}
-*/
+
 .contatos-fundo2 {
   /*flex: none;*/
   /*max-resolution: 100%;*/
   width: 100%;
-  max-width: auto;
-  max-height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  
 }
 
 /*Teste*/
@@ -388,8 +422,8 @@ h1 {
   justify-content: center;
   flex-direction: column;
   padding: 10px 45px;
-  width: 500px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  width: 800px;
+  /*box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;*/
 }
 
 .email-formatacao form{

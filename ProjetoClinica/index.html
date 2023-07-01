@@ -36,13 +36,13 @@
         <button class="arrow-right control" aria-label="next image">▶</button>
         <div class="gallery-wrapper">
             <center>
-            <div class="gallery slideshow">
-                <img src="./img/T1.png" alt="imgslides" class="item borda-redonda">
-                <img src="./img/T2.png" alt="imgslides" class="item borda-redonda">
-                <img src="./img/T3.png" alt="imgslides" class="item borda-redonda">
-                <img src="./img/T4.png" alt="imgslides" class="item borda-redonda">
-                <img src="./img/T5.png" alt="imgslides" class="item borda-redonda">
-            </div>
+                <div class="gallery slideshow">
+                    <img src="./img/T1.png" alt="imgslides" class="item borda-redonda">
+                    <img src="./img/T2.png" alt="imgslides" class="item borda-redonda">
+                    <img src="./img/T3.png" alt="imgslides" class="item borda-redonda">
+                    <img src="./img/T4.png" alt="imgslides" class="item borda-redonda">
+                    <img src="./img/T5.png" alt="imgslides" class="item borda-redonda">
+                </div>
             </center>
         </div>
     </div>
@@ -76,12 +76,15 @@
             <section class="direcao-linha flex-box area2"><!--Imagens-->
 
                 <section class="direcao-coluna flex-box">
-                    <div class=""><img class="tamanho-imgs-quadrados espacamento-imgs" src="./img/quadrado-teste.png"></div>
-                    <div class=""><img class="tamanho-imgs-quadrados espacamento-imgs" src="./img/quadrado2-teste.png"></div>
+                    <div class=""><img class="tamanho-imgs-quadrados espacamento-imgs" src="./img/quadrado-teste.png">
+                    </div>
+                    <div class=""><img class="tamanho-imgs-quadrados espacamento-imgs" src="./img/quadrado2-teste.png">
+                    </div>
                 </section>
 
                 <section class="flex-box">
-                    <div class=""><img class="tamanho-imgs-retangulo espacamento-imgs" src="./img/retangulo-teste.png"></div>
+                    <div class=""><img class="tamanho-imgs-retangulo espacamento-imgs" src="./img/retangulo-teste.png">
+                    </div>
                 </section>
 
             </section>
@@ -211,43 +214,53 @@
 
     <!--Contatos-->
 
-    <div class="ajuste-lateral2 fonte-texto-karla cor-texto contatos-fundo1">
-        <!--<img src="./img/medicoAfooter.jpg" alt="" class="contatos-fundo1">-->
-        <section class="Alinhamento-texto borda-redonda area5 alinhamento-contate-nos">
-            <p id="Contate-nos"></p><!--Para o ID-->
-            <!--
-            <h1>Contate-nos</h1>
-            <br>
-            <h3>Telefones</h3>
-            <p>(86) 98888-8888</p>
-            <p>(86) 97777-7777</p>
-            <br>
-            <h3>Redes Sociais</h3>
-            <p>@ClinicaMaisSaude</p>
-            <p>ClinicaMaisSaude@gmail.com</p>
-            <br><br>
-            -->
+    <div class="ajuste-lateral2 fonte-texto-karla cor-texto">
+        <section class="Alinhamento-texto borda-redonda area5 alinhamento-contate-nos flex-box" id="Contate-nos">
             <div class="email-formatacao borda-redonda ">
                 <br>
                 <h2>Contate-nos</h2>
                 <br>
-                <form action="" method="post">
-                    <label>Nome</label>
-                    <input class="fonte-texto-karla" type="text" name="nome" placeholder="Digite seu nome"
-                        autocomplete="off">
-                    <label>Email</label>
-                    <input class="fonte-texto-karla" type="email" name="email" placeholder="Digite seu email"
-                        autocomplete="off">
-                    <label>Mensagem</label>
-                    <textarea class="fonte-texto-karla" name="message" cols="30" rows="8"
-                        placeholder="Digite sua mensagem"></textarea>
-                    <button class="fonte-texto-karla" type="submit">Enviar</button>
-                    <br>
-                </form>
+                <section class="flex-box direcao-linha">
+                    <form action="" method="post">
+                        <label>Nome</label>
+                        <input class="fonte-texto-karla" type="text" name="nome" placeholder="Digite seu nome"
+                            autocomplete="off">
+                        <label>Email</label>
+                        <input class="fonte-texto-karla" type="email" name="email" placeholder="Digite seu email"
+                            autocomplete="off">
+                        <label>Mensagem</label>
+                        <textarea class="fonte-texto-karla" name="message" cols="30" rows="8"
+                            placeholder="Digite sua mensagem"></textarea>
+                        <button class="fonte-texto-karla" type="submit">Enviar</button>
+                        <br>
+                    </form>
+                    <section class="flex-box back direcao-coluna">
+                        <section class="direcao-linha">
+                            <center>
+                            <div class="direcao-linha flex-box">
+                                <div class=""><img class="tamanho-imgs-logos-email espacamento-imgs"src="./img/emailLogo.png">
+                                </div>
+                                <div class=""><img class="tamanho-imgs-logos-insta espacamento-imgs"src="./img/instagramLogo.png">
+                                </div>
+                                <div class=""><img class="tamanho-imgs-logos-whats espacamento-imgs"src="./img/whatsappLogo.png">
+                                </div>
+                                <div class=""><img class="tamanho-imgs-logos-face espacamento-imgs"src="./img/facebookLogo.png">
+                                </div>
+                            </div>
+                            </center>
+                        </section>
+                        <section class="">
+                            <p class="flex-box ">Contate-nos
+                            </p>
+                        </section>
+                    </section>
+
+                </section>
             </div>
         </section>
+
         <div>
-            <img src="./img/medicoAfooter.jpg" alt="" class="contatos-fundo2">
+            <img src="./img/medicoAfooter.png" alt="" class="contatos-fundo2">
         </div>
     </div>
 
