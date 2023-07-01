@@ -511,109 +511,67 @@ form button:hover{
 
 /**************************************************************/
 /*Parte Footer*/
-footer{
-  background-color: #9fa0a3;
-  padding: 10px 0;
+/*Parte Footer*/
+.footer-principal{
+    background-color: #9fa0a3;
+    width: 100%; 
 }
+
 .container-footer{
-  max-width: 2200px;
-  padding: 0 4%;
-  margin: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: -10px;
+    padding-left: -10px;
 }
+
 .row-footer{
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.footer-col{
-  width: 25%;
-  padding: 0 15px;
-}
-.footer-col h4{
-  font-size: 22px;
-  color: white;
-  margin-bottom: 5%;
-  left: 40px;
-  font-weight: 500;
-  position: relative;
-  text-transform: uppercase;
-}
-.footer-col ul{
-  list-style: none;
-}
-.footer-col ul li{
-  margin: 25px 0;
-}
-.footer-col ul li a{
-  font-size: 16px;
-  text-transform: capitalize;
-  color: white;
-  text-decoration: none;
-  font-weight: 300;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-  color: #cecdcd;
-  padding-left: 10px;
+
+.alinhamento-texto {
+    text-align: center;
 }
 
-.footer-col .form-sub input{
-  width: 100%;
-  padding: 10px;
-  font-size: 15px;
-  outline: none;
-  border: 1px solid white;
-  color: rgb(0, 0, 0);
-  background-color: #ffffff;
-  position: relative;
-  left: 20px;
- 
-}
-.footer-col .form-sub input::placeholder{
-  color: rgb(0, 0, 0);
-}
-.footer-col .form-sub button{
-  width: 100%;
-  margin-top: 10px;
-  padding: 10px; 
-  font-size: 17px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  color: #ffffff;
-  border-radius: 3px;
-  font-weight: bold;
-  background-color: rgb(255, 0, 0);
-  position: relative;
-  left: 30px;
-  
-         
+.footer-col2{
+    margin-bottom: 15px;
 }
 
-.linha-footer{
-color: black;
-right: 900px;
-border: 0;
-border-top: 3px
+.back1 {
+    background-color: aqua;
+    margin-right: 20px;
+    
+}
+.back2 {
+    background-color: yellow;
+    margin-right: 20px;
+}
+.back3 {
+    background-color: royalblue;
 }
 
-.footer-col h1{
-  font-size: 22px;
-  color: white;
-  margin-bottom: 5%;
-  left: 110px;
-  font-weight: 500;
-  position: relative;
-  text-transform: uppercase;
+.justificar-centro {
+    justify-content: space-evenly;
 }
 
-.footer-col h5{
-  color: rgb(2, 2, 2);
-  margin-bottom: 7%;
-  left: 650px;
-  position: relative;
-  text-transform: uppercase;
-
+.footer-formatacao{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
 }
+
+.footer-estilo-lista{
+    list-style: none;
+}
+
+.footer-animacao ul li:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+
 /**************************************/
