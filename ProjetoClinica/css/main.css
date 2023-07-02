@@ -542,11 +542,12 @@ form button:hover{
 .back1 {
     background-color: aqua;
     margin-right: 20px;
-    
+    width: 240px;
 }
 .back2 {
     background-color: yellow;
     margin-right: 20px;
+    width: 240px;
 }
 .back3 {
     background-color: royalblue;
