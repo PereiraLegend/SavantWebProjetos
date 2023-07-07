@@ -23,9 +23,6 @@ body {
     width: 50%;
 }
 
-header{
-    /*padding: 20px;*/
-}
 .btn-menu {
     width: 90%;
     text-align: right;
@@ -69,18 +66,57 @@ header{
   height: 50px;
 }
 
+/*slide carossel*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  position: relative;
+  height: 450px;
+}
+
+.container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+
+}
+
+.bullets {
+  position: absolute;
+  display: flex;
+
+  top: 550px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.bullet-single {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.active-bullet {
+  background-color: rgb(34, 214, 190);
+
+}
 
 /*slide carossel*/
 
 
-/*slide carossel*/
-
-/**/
 
 /*Parte Sobre*/
 
@@ -92,7 +128,7 @@ header{
 }
 .Alinhamento-texto{
   text-align: center;
-  align: justify;
+  text-align: justify;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
