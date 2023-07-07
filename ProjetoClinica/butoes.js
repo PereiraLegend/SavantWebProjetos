@@ -1,73 +1,35 @@
-/*Branch - Vitor */
-/*const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
+var lastindex = 0;
+var images = document.querySelectorAll('.container img');
+var bullets = document.querySelectorAll('.bullet-single');
 
-controls.forEach((control) => {
-  control.addEventListener("click", (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
+function changeSlide(index) {
+    let lastImage = images[lastindex];
+    let actualImage = images[index];
+    let lastBullet = bullets[lastindex];
+    let actualBullet = bullets[index];
 
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
-    }
+    lastImage.style.opacity = 0;
+    actualImage.style.opacity = 1;
+    lastBullet.classList.remove('active-bullet');
+    actualBullet.classList.add('active-bullet');
 
-    if (currentItem >= maxItems) {
-      currentItem = 0;
-    }
-
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
-
-    items.forEach((item) => item.classList.remove("current-item"));
-    
-    items[currentItem].scrollIntoView({
-      behavior: "smooth",
-      inline: "center"
-    });
-    
-    items[currentItem].classList.add("current-item");
-  });
-});
-
-
-function clickControl(isLeft) {
-  if (isLeft) {
-    currentItem -= 1;
-  } else {
-    currentItem += 1;
-  }
-
-  if (currentItem >= maxItems) {
-    currentItem = 0;
-  }
-
-  if (currentItem < 0) {
-    currentItem = maxItems - 1;
-  }
-
-  items.forEach((item) => item.classList.remove("current-item"));
-
-  items[currentItem].scrollIntoView({
-    behavior: "smooth",
-    inline: "center"
-  });
-
-  items[currentItem].classList.add("current-item");
+    lastindex = index;
 }
 
-controls.forEach((control) => {
-  control.addEventListener("click", (e) => {
-    const isLeft = e.target.classList.contains("arrow-left");
-    clickControl(isLeft);
-  });
-});
+function autoSlide() {
+    var currentIndex = lastindex + 1;
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+    changeSlide(currentIndex);
+}
 
-// Chama o clique automaticamente a cada 3 segundos
-setInterval(() => {
-  const isLeft = true; // Define a direção do clique (esquerda nesse caso)
-  clickControl(isLeft);
-}, 5000); */
+var slideInterval = setInterval(autoSlide, 3000);
+
+bullets.forEach((bullet, index) => {
+    bullet.addEventListener('click', () => {
+        clearInterval(slideInterval);
+        changeSlide(index);
+        slideInterval = setInterval(autoSlide, 3000); // Reinicia o intervalo após a seleção manual do slide
+    });
+});
