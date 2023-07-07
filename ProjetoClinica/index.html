@@ -26,7 +26,7 @@
         </div>
     </header>
     <br>
-    <div class="container">
+    <!--<div class="container">
         <button class="arrow-left control" aria-label="previous image">◀</button>
         <button class="arrow-right control" aria-label="next image">▶</button>
         <div class="gallery-wrapper">
@@ -38,8 +38,103 @@
                 <img src="./img/SSazul.png" alt="imgslides"class="item">
             </div>
         </div>
+    </div>--> 
+<!-------------------------------------------------------------------------------------------------------------->
+<body>
+    <style>
+        .container {
+            position: relative;
+            height: 450px;
+        }
+
+        .container img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            transition: 1s;
+
+        }
+
+        .bullets {
+            position: absolute;
+            display: flex;
+
+            top: 350px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            gap: 10px;
+            margin-top: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bullet-single {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(219, 219, 219);
+            border-radius: 50%;
+            cursor: pointer;
+
+        }
+
+        .active-bullet {
+            background-color: rgb(4, 0, 78);
+
+        }
+    </style>
+    <div class="container">
+        <img style="opacity: 1;" src="img/consultorio.png" alt="">
+        <img src="img/pediatra.png" alt="">
+        <img src="img/medico.png" alt="">
     </div>
-    
+
+    <div class="bullets">
+        <div class="bullet-single active-bullet"></div>
+        <div class="bullet-single"></div>
+        <div class="bullet-single"></div>
+    </div>
+
+    <script>
+        var lastindex = 0;
+        var images = document.querySelectorAll('.container img');
+        var bullets = document.querySelectorAll('.bullet-single');
+
+        function changeSlide(index) {
+            let lastImage = images[lastindex];
+            let actualImage = images[index];
+            let lastBullet = bullets[lastindex];
+            let actualBullet = bullets[index];
+
+            lastImage.style.opacity = 0;
+            actualImage.style.opacity = 1;
+            lastBullet.classList.remove('active-bullet');
+            actualBullet.classList.add('active-bullet');
+
+            lastindex = index;
+        }
+
+        function autoSlide() {
+            var currentIndex = lastindex + 1;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            changeSlide(currentIndex);
+        }
+
+        var slideInterval = setInterval(autoSlide, 3000);
+
+        bullets.forEach((bullet, index) => {
+            bullet.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                changeSlide(index);
+                slideInterval = setInterval(autoSlide, 3000); // Reinicia o intervalo após a seleção manual do slide
+            });
+        });
+    </script>
+</body>
+
     <br><br><br> <!--Parte Sobre-->
     
     <div class="ajuste-lateral">

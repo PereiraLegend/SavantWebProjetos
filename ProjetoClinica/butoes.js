@@ -1,5 +1,5 @@
 /*Branch - Vitor */
-const controls = document.querySelectorAll(".control");
+/*const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
 const maxItems = items.length;
@@ -70,4 +70,4 @@ controls.forEach((control) => {
 setInterval(() => {
   const isLeft = true; // Define a direção do clique (esquerda nesse caso)
   clickControl(isLeft);
-}, 5000);
+}, 5000); */
