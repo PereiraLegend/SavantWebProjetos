@@ -242,6 +242,7 @@ h1 {
   line-height: 30px;
 }
 /*Parte Serviços*/
+/*
 .container-card{
   width: 100%;
   display: flex;
@@ -307,6 +308,95 @@ h1 {
       width: 100%;
       flex-direction: column;
   }
+}
+*/
+.cardservico{
+  width: 320px;
+  border-radius: 40px;
+  background-color: #fff;
+  margin: 25px;
+}
+.slideservico-content{
+  margin: 0 40px;
+}
+.imageslide-content, .cardservico-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.imageslide-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 0px 0;
+}
+
+.overlay{
+  position:relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #74d4cc;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before, .overlay::after{
+  content: '';
+  position:absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #74d4cc;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.cardservico-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 40px;
+}
+.cardservico-image .cardservico-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 4px solid #74d4cc;
+}
+
+.alinhamento-servico {
+  /*min-height: 100vh;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+  padding: 3px;
+}
+.name-servico{
+  font-size: 18px;
+  font-weight: 500;
+}
+.descricao-servico{
+  font-size: 14px;
+  text-align: center;
+}
+.botao-servico{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #74d4cc;
+  border-radius: 40px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.botao-servico:hover{
+  background-color: #9fa0a3;
 }
 
 /*Parte Google Maps*/

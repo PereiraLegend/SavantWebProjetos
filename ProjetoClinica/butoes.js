@@ -75,7 +75,7 @@ setInterval(() => {
   const isLeft = true; // Define a direção do clique (esquerda nesse caso)
   clickControl(isLeft);
   teste();
-}, 100000);
+}, 10000000);
 
 /**************************************************************************************** */
 
