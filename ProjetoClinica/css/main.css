@@ -59,12 +59,7 @@ body {
 .btn-menu a:hover::after{ /*Animação do css nos botões do menu*/
     width: 100%;
 }
-/*Parte Slides*/
 
-.imgslides{
-  width: 50px;
-  height: 50px;
-}
 
 /*slide carossel*/
 * {
@@ -113,14 +108,7 @@ body {
   background-color: rgb(34, 214, 190);
 
 }
-
 /*slide carossel*/
-
-
-
-/*Parte Sobre*/
-
-
 
 /*Fontes e alinhamento do site*/
 .flex-box{
