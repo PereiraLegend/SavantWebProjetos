@@ -178,8 +178,8 @@ header{
 
 .cor-texto{
   color: gray;
-  
 }
+
 
 .formatacao-linhas{
   line-height: 30px;
@@ -249,7 +249,7 @@ header{
 .card:hover p {
   visibility: visible;
 }
-
+/*
 @media screen and (max-width: 768px) { 
   .container-card{
       width: 100%;
@@ -307,26 +307,48 @@ header{
 /****************************************************************/
 /*Parte contatos*/
 .alinhamento-contate-nos{
+  align-items: center;
+  
   margin: 50%;
   margin-top: 10px;
   margin-bottom: -530px;
   position: relative;
+  
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 838px){
   .alinhamento-contate-nos{
-    margin: 50%;
+    align-items: center;
+    
+    margin: 20%;
     margin-top: 10px;
     margin-bottom: -150px;
+    margin-left: 0%;
     position: relative;
+    width: 350px;
+    
   }
 }
 
+
+/*
+@media screen and (max-width: 791px){
+  .alinhamento-contate-nos{
+    width: 100%;
+    max-width: 20px;
+    align-items: center;
+  }
+}
+*/
 .fundo-contatos {
   /*background-color: yellow;*/
   margin-left: 40px;
 }
-
+@media screen and (max-height: 791px){
+  .fundo-contatos{
+    margin-left: 20px;
+  }
+}
 .fundo-contatos2 {
   background-color: beige;
 }
@@ -371,6 +393,10 @@ header{
   
 }
 
+.direcao-coluna2{
+  flex-direction: column;
+  align-items: center;
+}
 /*Teste*/
 
 .email-formatacao{
