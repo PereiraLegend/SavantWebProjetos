@@ -8,31 +8,31 @@ function changeSlide(index) {
     let lastBullet = bullets[lastindex];
     let actualBullet = bullets[index];
 
-    lastImage.style.opacity = 0;
-    actualImage.style.opacity = 1;
-    lastBullet.classList.remove('active-bullet');
-    actualBullet.classList.add('active-bullet');
+    lastImage.style.display = 'none';
+            actualImage.style.display = 'block';
+            lastBullet.classList.remove('active-bullet');
+            actualBullet.classList.add('active-bullet');
 
-    lastindex = index;
-}
+            lastindex = index;
+        }
 
-function autoSlide() {
-    var currentIndex = lastindex + 1;
-    if (currentIndex >= images.length) {
-        currentIndex = 0;
-    }
-    changeSlide(currentIndex);
-}
+        function autoSlide() {
+            var currentIndex = lastindex + 1;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            changeSlide(currentIndex);
+        }
 
-var slideInterval = setInterval(autoSlide, 3000);
+        var slideInterval = setInterval(autoSlide, 3000);
 
-bullets.forEach((bullet, index) => {
-    bullet.addEventListener('click', () => {
-        clearInterval(slideInterval);
-        changeSlide(index);
-        slideInterval = setInterval(autoSlide, 3000); // Reinicia o intervalo após a seleção manual do slide
-    });
-});
+        bullets.forEach((bullet, index) => {
+            bullet.addEventListener('click', () => {
+                clearInterval(slideInterval);
+                changeSlide(index);
+                slideInterval = setInterval(autoSlide, 3000); // Reinicia o intervalo após a seleção manual do slide
+            });
+        });
 
 /**************************************************************************************** */
 

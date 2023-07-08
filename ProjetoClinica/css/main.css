@@ -13,8 +13,13 @@ body {
     /*align-items: center;*/
 }
 .ajuste-margem {
-  margin: 0px 150px 0px;
+  margin: 0px 50px 0px;
 }
+
+.ajuste-margem0 {
+  margin: 20px;
+}
+
 .ajuste-margem2 {
   margin: 0px 50px 0px;
 }
@@ -33,6 +38,12 @@ html {
 .logo {
     width: 50%;
     margin-left: 130px;
+}
+@media screen and (max-width: 760px){
+  .logo{
+    width: 300%;
+    align-items: center;
+  }
 }
 
 header{
@@ -79,6 +90,16 @@ header{
   border-radius: 40px;
 }
 
+.menu-alinhamento-topo {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 760px){
+  .menu-alinhamento-topo{
+    margin-bottom: 50px;
+  }
+}
+
 .espacamento-imgs{
   margin: 10px;
 }
@@ -112,54 +133,74 @@ header{
   padding: 0;
   box-sizing: border-box;
 }
+.carrosel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
-  position: relative;
-  height: 450px;
+  width: 100%;
 }
 
 .container img {
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: none;
   width: 100%;
-  opacity: 0;
-  transition: 1s;
-
 }
 
 .bullets {
-  position: absolute;
+  width: 100%;
   display: flex;
-
-  top: 55 0px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  gap: 10px;
-  margin-top: 2rem;
   align-items: center;
   justify-content: center;
+  gap: 5px;
+  margin-top: 1rem;
+
+
 }
 
 .bullet-single {
   width: 20px;
   height: 20px;
-  background-color: rgb(219, 219, 219);
+  background-color: gray;
   border-radius: 50%;
-  cursor: pointer;
-
 }
 
 .active-bullet {
-  background-color: rgb(34, 214, 190);
+  /*background-color: rgb(4, 0, 78);*/
+  background-color: #74d4cc;
 
 }
+/* resposive */
+
+@media screen and (min-width:1025px) and (max-width:1280px){ /*laptops,desktops*/
+  
+  .container{
+    width: 100%;
+  }
+}
+
+@media screen and(min-width:768px) and (max-width:1024px){ /*tablets,ipads*/  
+
+}
+@media screen and(min-width:481px) and (max-width:767px){ /*tablets de baixa resoluçao, celulares*/  
+
+}
+@media screen and(min-width:320px) and (max-width:480px){ /*maioria dos celulares moveis*/ 
+
+}
+/* resposive */
 /*slide carossel*/
 
 /**/
 
 /*Parte Sobre*/
 
-
+.tamanho-div{
+  max-width: 500px;
+  
+}
 
 /*Fontes e alinhamento do site*/
 .flex-box{
@@ -285,15 +326,25 @@ header{
 
 /**Parte responsividade*/
 @media screen and (max-width: 768px) { /*Se a tela ficar menor que o tamanho determinado aqui os itens em linha se tornam colunas*/
-    .ajuste-lateral{
+  /*  
+  .ajuste-lateral{
         width: 100%;
         flex-direction: column;
     }
+    */
     .direcao-linha{
       flex-direction: column;
     }
     .logo{
       margin-left: 50px;
+    }
+    .map-box{
+      position: relative;
+      width: 600px;
+      height: 600px;
+
+      background-color: white;
+      float: right;
     }
 }
 
@@ -302,7 +353,14 @@ header{
     margin-left: 50px;
   }
 }
+@media screen and (max-width: 500px){
+  .logo{
+    /*margin-left: 40%;*/
+    /*margin-right: 500px;*/
+    align-items: center;
+  }
 
+}
 
 /****************************************************************/
 /*Parte contatos*/
@@ -320,7 +378,7 @@ header{
   .alinhamento-contate-nos{
     align-items: center;
     
-    margin: 20%;
+    margin: 15.5%;
     margin-top: 10px;
     margin-bottom: -150px;
     margin-left: 0%;
@@ -431,7 +489,7 @@ form input:focus{
   border-radius: 16px;
 }
 form input:hover{
-  border-radius: 16px;
+  border-radius: 16px;o
 }
 .email-formatacao textarea{
   padding: 10px;
