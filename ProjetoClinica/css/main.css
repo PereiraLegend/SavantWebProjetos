@@ -513,7 +513,7 @@ form button:hover{
 /*Parte Footer*/
 /*Parte Footer*/
 .footer-principal{
-    background-color: #9fa0a3;
+    background-color:#74d4cc;
     width: 100%; 
 }
 
@@ -563,7 +563,7 @@ form button:hover{
 .footer-formatacao{
     font-size: 20px;
     text-transform: capitalize;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: all 0.3s ease;
     text-align: center;
     
@@ -575,6 +575,10 @@ form button:hover{
   flex-direction: column;
   padding: 10px 45px;
   width: 400px;
+  margin-bottom: 20px;
+  border:0px;
+  transition: all 1s;
+  
 
 }
 .footer-enviar{
@@ -592,6 +596,7 @@ form button:hover{
     color: #cecdcd;
     padding-left: 10px;
     
+    
 }
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
 .footer-fonte-texto-kala2{
@@ -600,6 +605,11 @@ form button:hover{
   text-decoration: none;
 }
 
+
+.footer-text-color{
+
+ color:rgb(0, 0, 0);
+}
 
 
 
