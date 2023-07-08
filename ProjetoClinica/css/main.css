@@ -538,38 +538,70 @@ form button:hover{
 .footer-col2{
     margin-bottom: 15px;
 }
-
+/*
 .back1 {
     background-color: aqua;
     margin-right: 20px;
-    width: 240px;
+    
 }
 .back2 {
     background-color: yellow;
     margin-right: 20px;
-    width: 240px;
 }
 .back3 {
-    background-color: royalblue;
+    background-color: rgb(255, 255, 255);
 }
-
+*/
 .justificar-centro {
     justify-content: space-evenly;
 }
 
-
 .footer-estilo-lista{
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+}
+
+.footer-formatacao{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    transition: all 0.3s ease;
+    text-align: center;
+    
+}
+.footer-botao-email{
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 45px;
+  width: 400px;
+
+}
+.footer-enviar{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #f5f5f5;
+  margin-bottom: 20px;
+  transition: all 1s;
+  width: 400px;
+  
 }
 
 .footer-animacao ul li:hover{
     color: #cecdcd;
     padding-left: 10px;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+.footer-fonte-texto-kala2{
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-.footer-fonte-texto-kala2{
-    font-family: 'Karla', sans-serif;
-    font-size: 20px;
-}
+
+
+
+
 /**************************************/
