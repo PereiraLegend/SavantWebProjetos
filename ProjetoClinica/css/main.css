@@ -511,7 +511,7 @@ form button:hover{
 
 /**************************************************************/
 /*Parte Footer*/
-/*Parte Footer*/
+
 .footer-principal{
     background-color:#74d4cc;
     width: 100%; 
@@ -538,20 +538,7 @@ form button:hover{
 .footer-col2{
     margin-bottom: 15px;
 }
-/*
-.back1 {
-    background-color: aqua;
-    margin-right: 20px;
-    
-}
-.back2 {
-    background-color: yellow;
-    margin-right: 20px;
-}
-.back3 {
-    background-color: rgb(255, 255, 255);
-}
-*/
+
 .justificar-centro {
     justify-content: space-evenly;
 }
